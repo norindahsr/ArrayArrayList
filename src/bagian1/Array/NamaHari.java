@@ -1,13 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package bagian1.Array;
 
-/**
- *
- * @author user
- */
 public class NamaHari {
     
+    public static void main(String[] args) {
+
+        String[] hari = {
+            "Senin",
+            "Selasa",
+            "Rabu",
+            "Kamis",
+            "Jumat"
+        };
+
+        System.out.println("Hari dengan lebih dari 5 huruf:");
+
+        for (int i = 0; i < hari.length; i++) {
+            if (hari[i].length() > 5) {
+                System.out.println(hari[i]);
+            }
+        }
+    }
 }
